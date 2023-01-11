@@ -1,0 +1,161 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100%;
+}
+.menu-button
+{
+    color: #000 ;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #760B00;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 30px;
+}
+.navbar .menu li
+{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a
+{
+    display: block;
+    margin-left: 20px ;
+    color: #fff ;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar .menu li .active
+{
+    border-bottom: 2px solid #000;
+}
+.navbar .menu li a i
+{
+    color: #fff;
+}
+.navbar .menu li a:hover
+{
+    border-bottom: 2px solid #000;
+}
+.logo img
+{
+    width: 74px;
+}
+.info
+{   
+    margin-top: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+.info h1
+{
+    font-family: Calibri;
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid grey;
+}
+.info form
+{
+    padding: 10px;
+    box-sizing: border-box;
+}
+form .text{
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid silver;
+}
+.text input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.text label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+}
+.text span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:  #760B00;
+}
+.text input:focus ~ label,
+.text input:valid ~ label
+{
+top: -5px;
+color: darkcyan;
+}
+.text input:focus ~ span::before,
+.text input:valid ~ span::before{
+    width: 100%;
+}
+.passwrd{
+    margin: -5px 0 20px 5px;
+    color: solid black;
+    cursor: pointer;
+}
+.passwrd:hover{
+    text-decoration: underline;
+}
+input[type="submit"]
+{
+    width: 100%;
+    height: 50px;
+    border: 1px;
+    background: #000;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+}
+input[type="submit"]:hover
+{
+    transition: .5s;
+    background:  #760B00;
+}
+.sign_in{
+    margin: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
+.sign_in a{
+    color: #2691d9;
+    text-decoration: none;
+}
+.sign_in a:hover{
+    text-decoration: underline;
+}

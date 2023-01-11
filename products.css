@@ -1,0 +1,136 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100%;
+    background-color: #fff;
+}
+.menu-button
+{
+    color: #000 ;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #760B00;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 30px;
+}
+.navbar .menu li
+{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a
+{
+    display: block;
+    margin-left: 20px ;
+    color: #FFFFFF ;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar .menu li .active
+{
+    border-bottom: 2px solid #000;
+}
+.navbar .menu li a i
+{
+    color: #fff;
+}
+.navbar .menu li a:hover
+{
+    border-bottom: 2px solid #000;
+}
+.logo img
+{
+    width: 74px;
+}
+h1
+{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Cascadia Code ;
+    font-size: 75px;
+    background: #000;
+    color: #fff;
+}
+.sec
+{
+    padding: 10px 5px;
+
+}
+.products
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    
+}
+.products .card
+{
+    width:310px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.products .card img
+{
+    height: 300px;
+    width: 100%;
+}
+.products .card img:hover
+{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+.products .card .title
+{
+    font-weight: 900;
+    font-height: 20px;
+    font-family: Bahnschrift;
+    color: #424144;
+    padding: 0 20px;
+}
+.products .card .box
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.products .card .box .price
+{
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+.products .card .box button
+{
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+}
+.products .card .box button:hover
+{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}

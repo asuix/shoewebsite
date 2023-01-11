@@ -1,0 +1,108 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100%;
+    text-decoration: none;
+}
+.menu-button
+{
+    color: #000 ;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #760B00;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 30px;
+}
+.navbar .menu li
+{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a
+{
+    display: block;
+    margin-left: 20px ;
+    color: #FFFFFF ;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar .menu li .active
+{
+    border-bottom: 2px solid #000;
+}
+.navbar .menu li a i
+{
+    color: #fff;
+}
+.navbar .menu li a:hover
+{
+    border-bottom: 2px solid #000;
+}
+.logo img
+{
+    width: 74px;
+}
+.section
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    flex-direction: column;
+    height: 85vh;
+}
+.column
+{
+    min-width: 300px;
+}
+.column img
+{
+    margin-top: 80px;
+    border-radius: 10px;
+}
+.column h1
+{
+    font-size: 100px;
+}
+.column p
+{
+    font-size: 50px;
+}
+.column a
+{
+    text-decoration: none;
+}
+
+.column button
+{
+    margin-top: 30px;
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.column button:hover
+{   
+    color: #fff;
+    background: #000;
+    cursor:pointer;
+}
